@@ -124,6 +124,18 @@ body {
     padding-top: 40px;
     font-weight: bold;
 }
+#service {
+    margin-top: 1100px;
+}
+#designers {
+    margin-top: 80px;
+}
+#packages {
+    padding-top: 500px;
+}
+#contact {
+    margin-top: 50px;
+}
 .icon {
     background-color: red;
     border-radius: 200px;
@@ -200,15 +212,17 @@ body {
     width: 100%;
     max-height: 30%;
 }
-#content_services {
+#content_services, #content_designers, #content_packages, #content_contact {
     padding-top: 60px;
     font-size: 18px;
     line-height: 25px;
+    word-spacing: 1px;
 }
-#content_designers {
-    padding-top: 60px;
-    font-size: 18px;
-    line-height: 25px;
+#content_contact {
+    margin-bottom: 30px;
+}
+.content-first {
+    line-height: 60px;
 }
 .designers {
     position: absolute;
@@ -229,25 +243,21 @@ body {
     box-sizing: border-box;
     width: 100%;
 }
-.text {
-    font-size: 25px;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 15px;
-    width: 100%;
-}
-.textone {
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 15px;
-    font-size: 16px;
-    color: rgb(150, 145, 145);
-}
-.texttwo {
+.name, .job, .content {
     display: inline-block;
     margin-top: 15px;
     margin-left: 15px;
+}
+.name {
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+}
+.job {
+    font-size: 16px;
+    color: rgb(150, 145, 145);
+}
+.content {
     font-size: 20px;
 }
 .rightTable {
@@ -303,6 +313,14 @@ body {
     top:50%;
     transform: translate(-50%, -50%);
     font-size: 16px;
+    line-height: 2;
+}
+.text_table-money {
+    font-size: 30px;
+    font-weight: bold;
+}
+.table_itiem {
+    height: 100%;
 }
 .buttonleft {
     height: 60%;
@@ -314,10 +332,16 @@ body {
     color: white;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
+.Tableleft li:first-child span {
+    font-size: 24px;
+}
 .Tableright li:first-child {
     height: calc(8.33% * 2);
     background-color: rgb(245, 55, 55);
     color: white;
+}
+.Tableright li:first-child span {
+    font-size: 24px;
 }
 .Tableright li:nth-child(7) {
     height: calc(8.33% * 3);

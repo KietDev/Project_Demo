@@ -14,16 +14,16 @@
         
         <div class="full_teamplate">
             <div class="bar_menu">
-                <button type="button" class="menu_icon" onclick="myFunction_open()"><i class="fa-solid fa-bars icon_title"></i></button>
+                <button type="button" class="menu_icon" onclick="open_menu()"><i class="fa-solid fa-bars icon_title"></i></button>
                 <span class="text_title-bar">Company Name</span>
             </div>
             <div class="teamplate_menu">
-                <button type="button" class="close_menu" onclick="myFunction_close(), fix_bug()" >Close Menu</button>
+                <button type="button" class="close_menu" onclick="close_menu()" >Close Menu</button>
                 <div class="menu_title">
                     <span class="text_title">Company Name</span>
                 </div>
                 <div class="menu_selector">
-                    <ul style="height: 100%;">
+                    <ul>
                         <li><a class="menu__selector-content" href="#">Home</a></li>
                         <li><a class="menu__selector-content" href="#">Showcase</a></li>
                         <li><a class="menu__selector-content" href="#service">Services</a></li>
@@ -49,9 +49,9 @@
                         <li class="picture_itiem"><a href="#"><img src="livingroom2.jpg" alt="Error!" class="itiem_image"></a></li>
                     </ul>
                 </div>
-                <h4 class="main_content-itiem" style="margin-top: 1100px;" id="service">Services.</h4>
+                <h4 class="main_content-itiem" id="service">Services.</h4>
                 <div class="icon"><div class="icon-itiem"></div></div>
-                <p id="content_services" style="word-spacing: 1px;"><span style="line-height: 60px;">We are a interior design service that focus on what's best for your home and what's best for you!</span><br>
+                <p id="content_services"><span class="content-first">We are a interior design service that focus on what's best for your home and what's best for you!</span><br>
 
                     Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -60,9 +60,9 @@
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <h4 class="main_content-itiem" style="margin-top: 80px;" id="designers">Designers.</h4>
+                <h4 class="main_content-itiem" id="designers">Designers.</h4>
                 <div class="icon"><div class="icon-itiem"></div></div>
-                <p id="content_designers" style="word-spacing: 1px;"> <span style="line-height: 60px; word-spacing: 1px;">The best team in the world.</span> <br>
+                <p id="content_designers"> <span class="content-first">The best team in the world.</span> <br>
 
                     We are lorem ipsum consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -78,40 +78,40 @@
                     <div class="designers">
                        <div class="person">
                         <img src="team2.jpg" alt="Error!" class="image">
-                        <span class="text">John Doe</span>
-                        <span class="textone">CEO & Founder</span>
-                        <p class="texttwo">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        <span class="name">John Doe</span>
+                        <span class="job">CEO & Founder</span>
+                        <p class="content">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
                        </div>
                        <div class="person">
                         <img src="team1.jpg" alt="Error!" class="image">
-                        <span class="text">Jane Doe</span>
-                        <span class="textone">Designer</span>
-                        <p class="texttwo">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        <span class="name">Jane Doe</span>
+                        <span class="job">Designer</span>
+                        <p class="content">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
                        </div>
                        <div class="person">
                         <img src="team3.jpg" alt="Error!" class="image">
-                        <span class="text">Mike Ross</span>
-                        <span class="textone">Architect</span>
-                        <p class="texttwo">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        <span class="name">Mike Ross</span>
+                        <span class="job">Architect</span>
+                        <p class="content">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
                        </div>
                     </div>
-                    <h4 class="main_content-itiem" style="padding-top: 500px;" id="packages">Packages.</h4>
+                    <h4 class="main_content-itiem" id="packages">Packages.</h4>
                 <div class="icon"><div class="icon-itiem"></div></div>
-                <p style="padding-top: 50px; font-size: 18px; word-spacing: 1px;">Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                <p id="content_packages">Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                     Duis aute irure</p>
                     <div class="Table">
                         <div class="Tableleft">
-                            <ul style="height: 100%;">
-                                <li class="sectionTable"><span class="text-table" style="font-size: 24px;">Basic</span></li>
+                            <ul class="table_itiem">
+                                <li class="sectionTable"><span class="text-table">Basic</span></li>
                                 <li class="sectionTable"><span class="text-table">Floorplanning</span></li>
                                 <li class="sectionTable"><span class="text-table">10 hours support</span></li>
                                 <li class="sectionTable"><span class="text-table">Photography</span></li>
                                 <li class="sectionTable"><span class="text-table">20% furniture discount</li>
                                 <li class="sectionTable"><span class="text-table">Good deals</span></li>
                                 <li class="sectionTable">
-                                    <div class="text-table" style="line-height: 2;">
-                                        <span style="font-size: 30px; font-weight: bold;">$ 199</span> <br>
+                                    <div class="text-table">
+                                        <span class="text_table-money">$ 199</span> <br>
                                         <span>per room</span>
                                     </div>
                                 </li>
@@ -119,16 +119,16 @@
                             </ul>
                         </div>
                         <div class="Tableright">
-                            <ul style="height: 100%;">
-                                <li class="sectionTable"><span class="text-table" style="font-size: 24px;">Pro</span></li>
+                            <ul class="table_itiem">
+                                <li class="sectionTable"><span class="text-table">Pro</span></li>
                                 <li class="sectionTable"><span class="text-table">Floorplanning</span></li>
                                 <li class="sectionTable"><span class="text-table">50 hours support</span></li>
                                 <li class="sectionTable"><span class="text-table">Photography</span></li>
                                 <li class="sectionTable"><span class="text-table">50% furniture discount</span></li>
                                 <li class="sectionTable"><span class="text-table"t>GREAT deals</span></li>
                                 <li class="sectionTable">
-                                    <div class="text-table" style="line-height: 2;">  
-                                        <span style="font-size: 30px; font-weight: bold;">$ 249</span> <br>
+                                    <div class="text-table">  
+                                        <span class="text_table-money">$ 249</span> <br>
                                         <span>per room</span>
                                     </div>
                                 </li>
@@ -136,9 +136,9 @@
                             </ul>
                         </div>
                     </div>
-                <h4 class="main_content-itiem" style="margin-top: 50px;" id="contact">Contact.</h4>
+                <h4 class="main_content-itiem" id="contact">Contact.</h4>
                 <div class="icon"><div class="icon-itiem"></div></div>
-                <p style="padding-top: 50px; font-size: 18px; word-spacing: 2; margin-bottom:30px;">Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+                <p id="content_contact">Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
                 <div class="forms">
                     <form>
                         <label for="name">Name</label> <br>
@@ -158,35 +158,35 @@
             </div>
         </div>
         <script>
-            function myFunction_open() {
-                const example= document.getElementsByClassName("teamplate_menu");
-                example[0].style.opacity = 1;
-                example[0].style.visibility = "visible";
-                const exampleone = document.getElementsByClassName("close_menu");
-                exampleone[0].style.opacity = 1;
-                exampleone[0].style.visibility = "visible";
+            function open_menu() {
+                const set_menu= document.getElementsByClassName("teamplate_menu");
+                set_menu[0].style.opacity = 1;
+                set_menu[0].style.visibility = "visible";
+                const set_close = document.getElementsByClassName("close_menu");
+                set_close[0].style.opacity = 1;
+                set_close[0].style.visibility = "visible";
             }
-            function myFunction_close() {
-                const example = document.getElementsByClassName("teamplate_menu");
-                example[0].style.opacity = 0;
-                example[0].style.visibility = "hidden";
-                const exampleone = document.getElementsByClassName("close_menu");
-                exampleone[0].style.opacity = 0;
-                exampleone[0].style.visibility = "hidden";
+            function close_menu() {
+                const set_menu = document.getElementsByClassName("teamplate_menu");
+                set_menu[0].style.opacity = 0;
+                set_menu[0].style.visibility = "hidden";
+                const set_close = document.getElementsByClassName("close_menu");
+                set_close[0].style.opacity = 0;
+                set_close[0].style.visibility = "hidden";
             }
-            function fix_bug(x) {
-                const demo = document.getElementsByClassName("teamplate_menu");
+            function set_default(x) {
+                const set_menu = document.getElementsByClassName("teamplate_menu");
                 if(x.matches) {
-                    demo[0].style.opacity = 1;
-                    demo[0].style.visibility = "visible";
+                    set_menu[0].style.opacity = 1;
+                    set_menu[0].style.visibility = "visible";
                 } else {
-                    demo[0].style.opacity = 0;
-                    demo[0].style.visibility = "hidden";
+                    set_menu[0].style.opacity = 0;
+                    set_menu[0].style.visibility = "hidden";
                 }
             }
             var x = window.matchMedia("(min-width: 1000px)");
-            fix_bug(x);
-            x.addListener(fix_bug);
+            set_default(x);
+            x.addListener(set_default);
         </script>
     </body>
 </html>
