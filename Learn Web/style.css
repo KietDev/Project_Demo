@@ -9,17 +9,18 @@ body {
     height: 100%;
     z-index: 1;
 }
+.bar_menu, .close_menu, .teamplate_menu, .menu__selector-content, .menu_icon, .icon, .Tableright li:first-child, .buttonright  {
+    background-color:rgb(245, 55, 55);
+}
 .bar_menu {
     position: absolute;
     width: 100%;
     height: 2%;
-    background-color: rgb(245, 55, 55);
     opacity: 0;
     visibility: hidden;
 }
 .teamplate_menu {
     position: fixed;
-    background-color: rgb(245, 55, 55);
     width: 20%;
     height: 100%;
     z-index: 2;
@@ -30,7 +31,6 @@ body {
     height: 5%;
     top: 0;
     color: white;
-    background-color: rgb(245, 55, 55);
     border: 0px;
     font-size: 30px;
     opacity: 0;
@@ -56,7 +56,6 @@ body {
     line-height: 45px;
     text-decoration: none;
     width: 90%;
-    background-color: rgb(247, 46, 46);
     display: inline-block;
     border-radius: 5px;
     padding-left: 20px;
@@ -111,7 +110,6 @@ body {
     border: 1px solid black;
     color: white;
     position: relative;
-    background-color: rgb(245, 55, 55);
 }
 .main_content-title {
     font-size: 65px;
@@ -137,7 +135,6 @@ body {
     margin-top: 50px;
 }
 .icon {
-    background-color: red;
     border-radius: 200px;
     width: 60px;
     height: 7px;
@@ -337,7 +334,6 @@ body {
 }
 .Tableright li:first-child {
     height: calc(8.33% * 2);
-    background-color: rgb(245, 55, 55);
     color: white;
 }
 .Tableright li:first-child span {
@@ -350,7 +346,6 @@ body {
     height: calc(8.33% * 2);
 }
 .buttonright {
-    background-color: red;
     color: white;
     height: 60%;
     width: 30%;
