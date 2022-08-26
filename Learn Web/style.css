@@ -9,15 +9,32 @@ body {
     height: 100%;
     z-index: 1;
 }
+.bar_menu {
+    height: 2%;
+}
 .bar_menu, .close_menu, .teamplate_menu, .menu__selector-content, .menu_icon, .icon, .Tableright li:first-child, .buttonright  {
     background-color:rgb(245, 55, 55);
 }
-.bar_menu {
+.bar_menu, .close_menu {
     position: absolute;
     width: 100%;
-    height: 2%;
     opacity: 0;
     visibility: hidden;
+}
+.menu_icon {
+    display: inline-block;
+    margin-left: 30px;
+    width: 50px;
+    height: 50px;
+    color: white;
+    position: relative;
+}
+.icon_title {
+    font-size: 24px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 .teamplate_menu {
     position: fixed;
@@ -26,15 +43,11 @@ body {
     z-index: 2;
 }
 .close_menu {
-    position: absolute;
-    width: 100%;
     height: 5%;
     top: 0;
     color: white;
     border: 0px;
     font-size: 30px;
-    opacity: 0;
-    visibility: hidden;
 }
 .menu_title{
     width: 100%;
@@ -94,22 +107,6 @@ body {
     font-weight: bold;
     display: inline-block;
     width: 80%;
-}
-.icon_title {
-    font-size: 24px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-.menu_icon {
-    display: inline-block;
-    margin-left: 30px;
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
-    color: white;
-    position: relative;
 }
 .main_content-title {
     font-size: 65px;
@@ -174,10 +171,7 @@ body {
     width: 49.25%;
     height: 30%;
 }
-.list_picture li:first-child {
-    height: 38%;
-}
-.list_picture li:nth-child(2) {
+.list_picture li:first-child, .list_picture li:nth-child(2) {
     height: 38%;
 }
 .itiem_image {
@@ -193,17 +187,10 @@ body {
     opacity: 1; 
 }
 
-.pictureleft {
+.pictureleft, .pictureright {
     width: 49%;
     height: 1000px;
     box-sizing: border-box;
-    float: left;
-}
-.pictureright {
-    width: 49%;
-    height: 1000px;
-    box-sizing: border-box;
-    float: right;
 }
 .picture {
     width: 100%;
@@ -257,33 +244,18 @@ body {
 .content {
     font-size: 20px;
 }
-.rightTable {
-    border: 1px solid black;
-    width: 100%;
-    height: 600px;
-    margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
-}
 .Table {
     height: 600px;
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
-.Tableleft {
+.Tableleft, .Tableright {
     width: 49%;
     height: 100%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-}
-.Tableright {
-    display: flex;
-    flex-direction: column;
-    width: 49%;
-    height: 100%;
-    box-sizing: border-box;
 }
 .sectionTable {
     border-bottom: 1px solid #d2d1d1;
@@ -297,10 +269,10 @@ body {
     height:  calc(8.33% * 2);
     background-color:#616161;
 }
-.Tableleft li:nth-child(7) {
+.Tableleft li:nth-child(7), .Tableright li:nth-child(7) {
     height: calc(8.33% * 3);
 }
-.Tableleft li:last-child {
+.Tableleft li:last-child, .Tableright li:last-child {
     height: calc(8.33% * 2);
 }
 .text-table {
@@ -319,41 +291,25 @@ body {
 .table_itiem {
     height: 100%;
 }
-.buttonleft {
+.buttonleft, .buttonright {
     height: 60%;
     width: 30%;
     border: 1px solid white;
 }
-.buttonleft:hover {
+.buttonright {
+    color: white;
+}
+.buttonleft:hover, .buttonright:hover {
     background-color: black;
     color: white;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
-.Tableleft li:first-child span {
+.Tableleft li:first-child span, .Tableright li:first-child span {
     font-size: 24px;
 }
 .Tableright li:first-child {
     height: calc(8.33% * 2);
     color: white;
-}
-.Tableright li:first-child span {
-    font-size: 24px;
-}
-.Tableright li:nth-child(7) {
-    height: calc(8.33% * 3);
-}
-.Tableright li:last-child {
-    height: calc(8.33% * 2);
-}
-.buttonright {
-    color: white;
-    height: 60%;
-    width: 30%;
-    border: 1px solid white;
-}
-.buttonright:hover {
-    background-color: black;
-    transition: background-color 0.5s ease, color 0.5s ease;
 }
 .styleinput {
     width: 100%; 
@@ -399,8 +355,12 @@ body {
         width: 100%;
         height: 100%;
     }
-    .text_title-bar {
+    .text_title-bar, .menu_icon {
         position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .text_title-bar {
         display: inline-block;
         font-size: 24px;
         color: white;
@@ -408,22 +368,12 @@ body {
         width: 60%;
         margin-left: 100px;
         margin-top: 0px;
-        top: 50%;
-        transform: translateY(-50%);
     }
     .menu_icon {
         border: 0px;
         visibility: visible;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
     }
-    .menu_icon:hover {
-        background-color:rgb(150, 145, 145);
-        color: black;
-        transition: background-color 0.5s ease, color 0.5s ease;
-    }
-    .close_menu:hover {
+    .menu_icon:hover, .close_menu:hover {
         background-color:rgb(150, 145, 145);
         color: black;
         transition: background-color 0.5s ease, color 0.5s ease;

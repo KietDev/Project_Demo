@@ -14,11 +14,11 @@
         
         <div class="full_teamplate">
             <div class="bar_menu">
-                <button type="button" class="menu_icon" onclick="open_menu()"><i class="fa-solid fa-bars icon_title"></i></button>
+                <button type="button" class="menu_icon" onclick="openMenu()"><i class="fa-solid fa-bars icon_title"></i></button>
                 <span class="text_title-bar">Company Name</span>
             </div>
             <div class="teamplate_menu">
-                <button type="button" class="close_menu" onclick="close_menu()" >Close Menu</button>
+                <button type="button" class="close_menu" onclick="closeMenu()" >Close Menu</button>
                 <div class="menu_title">
                     <span class="text_title">Company Name</span>
                 </div>
@@ -158,35 +158,35 @@
             </div>
         </div>
         <script>
-            function open_menu() {
-                const set_menu= document.getElementsByClassName("teamplate_menu");
-                set_menu[0].style.opacity = 1;
-                set_menu[0].style.visibility = "visible";
-                const set_close = document.getElementsByClassName("close_menu");
-                set_close[0].style.opacity = 1;
-                set_close[0].style.visibility = "visible";
+            function openMenu() {
+                var setMenu= document.getElementsByClassName("teamplate_menu");
+                setMenu[0].style.opacity = 1;
+                setMenu[0].style.visibility = "visible";
+                var setClose = document.getElementsByClassName("close_menu");
+                setClose[0].style.opacity = 1;
+                setClose[0].style.visibility = "visible";
             }
-            function close_menu() {
-                const set_menu = document.getElementsByClassName("teamplate_menu");
-                set_menu[0].style.opacity = 0;
-                set_menu[0].style.visibility = "hidden";
-                const set_close = document.getElementsByClassName("close_menu");
-                set_close[0].style.opacity = 0;
-                set_close[0].style.visibility = "hidden";
+            function closeMenu() {
+                var setMenu = document.getElementsByClassName("teamplate_menu");
+                setMenu[0].style.opacity = 0;
+                setMenu[0].style.visibility = "hidden";
+                var setClose = document.getElementsByClassName("close_menu");
+                setClose[0].style.opacity = 0;
+                setClose[0].style.visibility = "hidden";
             }
-            function set_default(x) {
-                const set_menu = document.getElementsByClassName("teamplate_menu");
+            function setDefault(x) {
+                var setMenu = document.getElementsByClassName("teamplate_menu");
                 if(x.matches) {
-                    set_menu[0].style.opacity = 1;
-                    set_menu[0].style.visibility = "visible";
+                    setMenu[0].style.opacity = 1;
+                    setMenu[0].style.visibility = "visible";
                 } else {
-                    set_menu[0].style.opacity = 0;
-                    set_menu[0].style.visibility = "hidden";
+                    setMenu[0].style.opacity = 0;
+                    setMenu[0].style.visibility = "hidden";
                 }
             }
             var x = window.matchMedia("(min-width: 1000px)");
-            set_default(x);
-            x.addListener(set_default);
+            setDefault(x);
+            x.addListener(setDefault);
         </script>
     </body>
 </html>
